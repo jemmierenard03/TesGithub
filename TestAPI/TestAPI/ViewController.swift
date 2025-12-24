@@ -36,6 +36,7 @@ class ViewController: UIViewController {
 
             do {
                 let todo = try JSONDecoder().decode(Todo.self, from: data)
+                print(todo)
                 DispatchQueue.main.async {
                     self.resultLabel.text =
                     """
